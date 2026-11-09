@@ -1,0 +1,452 @@
+{
+  "diagnostic_version": 2,
+  "network_requests": [
+    {
+      "host": "m.vk.ru",
+      "path": "/friends",
+      "query_keys": [
+        "id"
+      ],
+      "http_method": "GET",
+      "resource_type": "document",
+      "http_status": 200,
+      "content_type": "text/html",
+      "body_keys": [],
+      "html_has_friends_source_links": false,
+      "supported_response": false
+    },
+    {
+      "host": "ads.vk.com",
+      "path": "/",
+      "query_keys": [],
+      "http_method": "HEAD",
+      "resource_type": "fetch",
+      "http_status": 301,
+      "content_type": "",
+      "body_keys": [],
+      "body_available": false,
+      "supported_response": false
+    },
+    {
+      "host": "m.vk.ru",
+      "path": "/",
+      "query_keys": [],
+      "http_method": "POST",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [
+        "act",
+        "staticVersion"
+      ],
+      "response_shape": {
+        "data": {
+          "type": "array",
+          "length": 1,
+          "first_item": {
+            "env": {
+              "pe": "dict",
+              "toggles": "dict",
+              "ex": "list",
+              "acl": "list",
+              "cfg": "dict"
+            },
+            "sw": {
+              "url": "str",
+              "push_hash": "str",
+              "stat_hash": "str"
+            }
+          }
+        },
+        "statsMeta": {
+          "platform": "str",
+          "st": "bool",
+          "id": "int",
+          "time": "int",
+          "hash": "str",
+          "anonymId": "str",
+          "anonymHash": "str",
+          "reloadVersion": "int"
+        },
+        "static_files": {
+          "type": "array",
+          "length": 0,
+          "first_item": null
+        },
+        "js": "str",
+        "async_deps_versions": {
+          "type": "array",
+          "length": 0,
+          "first_item": null
+        },
+        "all_static_entries": {
+          "<dynamic-key>": {
+            "type": "array",
+            "length": 1,
+            "first_item": "str"
+          }
+        },
+        "version": "str",
+        "rv": "int",
+        "type": "int",
+        "notifications": {
+          "type": "array",
+          "length": 0,
+          "first_item": null
+        }
+      },
+      "response_type": "NoneType"
+    },
+    {
+      "host": "m.vk.ru",
+      "path": "/",
+      "query_keys": [],
+      "http_method": "POST",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [
+        "act",
+        "staticVersion"
+      ],
+      "response_shape": {
+        "data": {
+          "type": "array",
+          "length": 1,
+          "first_item": {
+            "type": "array",
+            "length": 0,
+            "first_item": null
+          }
+        },
+        "statsMeta": {
+          "platform": "str",
+          "st": "bool",
+          "id": "int",
+          "time": "int",
+          "hash": "str",
+          "anonymId": "str",
+          "anonymHash": "str",
+          "reloadVersion": "int"
+        },
+        "static_files": {
+          "type": "array",
+          "length": 0,
+          "first_item": null
+        },
+        "js": "str",
+        "async_deps_versions": {
+          "type": "array",
+          "length": 0,
+          "first_item": null
+        },
+        "all_static_entries": {
+          "<dynamic-key>": {
+            "type": "array",
+            "length": 1,
+            "first_item": "str"
+          }
+        },
+        "version": "str",
+        "rv": "int",
+        "type": "int",
+        "notifications": {
+          "type": "array",
+          "length": 0,
+          "first_item": null
+        }
+      },
+      "response_type": "NoneType"
+    },
+    {
+      "host": "queuev4.vk.ru",
+      "path": "/<other>",
+      "query_keys": [
+        "act",
+        "id",
+        "key",
+        "ts",
+        "wait"
+      ],
+      "http_method": "GET",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [],
+      "response_shape": {
+        "failed": "int",
+        "err": "int"
+      },
+      "response_type": "NoneType"
+    },
+    {
+      "host": "ads.vk.ru",
+      "path": "/",
+      "query_keys": [],
+      "http_method": "HEAD",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "text/html",
+      "body_keys": [],
+      "body_available": false,
+      "supported_response": false
+    },
+    {
+      "host": "web.api.vk.ru",
+      "path": "/method/account.getInfo",
+      "query_keys": [
+        "client_id",
+        "v"
+      ],
+      "http_method": "POST",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [
+        "access_token",
+        "fields"
+      ],
+      "response_shape": {
+        "response": {
+          "audio_ads": {
+            "day_limit": "int",
+            "track_limit": "int",
+            "types_allowed": {
+              "type": "array",
+              "length": 1,
+              "first_item": "str"
+            },
+            "sections": {
+              "type": "array",
+              "length": 63,
+              "first_item": "str"
+            },
+            "day_limit_reached": "bool",
+            "sign": "str"
+          },
+          "audio_permissions": {
+            "audio_meta_info": "bool"
+          },
+          "settings": {
+            "type": "array",
+            "length": 1,
+            "first_item": {
+              "available": "bool",
+              "forced": "bool",
+              "name": "str"
+            }
+          },
+          "obscene_text_filter": "bool"
+        }
+      },
+      "response_type": "object",
+      "has_count_items": false
+    },
+    {
+      "host": "web.api.vk.ru",
+      "path": "/method/batch.call",
+      "query_keys": [
+        "client_id",
+        "v"
+      ],
+      "http_method": "POST",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [
+        "requests"
+      ],
+      "response_shape": {
+        "responses": {
+          "type": "array",
+          "length": 4,
+          "first_item": {
+            "id": "str",
+            "body": {
+              "response": "dict"
+            }
+          }
+        }
+      },
+      "response_type": "NoneType"
+    },
+    {
+      "host": "web.api.vk.ru",
+      "path": "/method/queue.subscribe",
+      "query_keys": [
+        "client_id",
+        "v"
+      ],
+      "http_method": "POST",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [
+        "access_token",
+        "queue_ids"
+      ],
+      "response_shape": {
+        "response": {
+          "base_url": "str",
+          "queues": {
+            "type": "array",
+            "length": 1,
+            "first_item": {
+              "key": "str",
+              "timestamp": "int"
+            }
+          }
+        }
+      },
+      "response_type": "object",
+      "has_count_items": false
+    },
+    {
+      "host": "web.api.vk.ru",
+      "path": "/method/batch.call",
+      "query_keys": [
+        "client_id",
+        "v"
+      ],
+      "http_method": "POST",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [
+        "requests"
+      ],
+      "response_shape": {
+        "responses": {
+          "type": "array",
+          "length": 2,
+          "first_item": {
+            "id": "str",
+            "body": {
+              "response": "dict"
+            }
+          }
+        }
+      },
+      "response_type": "NoneType"
+    },
+    {
+      "host": "web.api.vk.ru",
+      "path": "/method/account.getCounters",
+      "query_keys": [
+        "client_id",
+        "v"
+      ],
+      "http_method": "POST",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [
+        "access_token"
+      ],
+      "response_shape": {
+        "response": {
+          "business_notify_all": "int",
+          "games": "int",
+          "notifications_with_pushes": "int",
+          "menu_discover_badge": "int",
+          "menu_clips_badge": "int",
+          "menu_superapp_friends_badge": "int",
+          "menu_new_clips_badge": "int",
+          "sdk": "int",
+          "messages_unread_unmuted": "int",
+          "calls": "int",
+          "vkcom_email_unreads": "int",
+          "messages_folders": {
+            "type": "array",
+            "length": 3,
+            "first_item": {
+              "folder_id": "int",
+              "total_count": "int",
+              "unmuted_count": "int"
+            }
+          },
+          "channels": {
+            "total_count": "int",
+            "unmuted_count": "int",
+            "archived_count": "int",
+            "all_folder_count": "int",
+            "all_folder_unmuted_count": "int"
+          }
+        }
+      },
+      "response_type": "object",
+      "has_count_items": false
+    },
+    {
+      "host": "web.api.vk.ru",
+      "path": "/method/friends.get",
+      "query_keys": [
+        "client_id",
+        "v"
+      ],
+      "http_method": "POST",
+      "resource_type": "fetch",
+      "http_status": 200,
+      "content_type": "application/json",
+      "body_keys": [
+        "access_token",
+        "count",
+        "fields",
+        "list_id",
+        "offset",
+        "order",
+        "ref",
+        "user_id"
+      ],
+      "response_shape": {
+        "response": {
+          "count": "int",
+          "items": {
+            "type": "array",
+            "length": 25,
+            "first_item": {
+              "id": "int",
+              "first_name_gen": "str",
+              "first_name_acc": "str",
+              "bdate": "str",
+              "<dynamic-key>": "str",
+              "has_unseen_stories": "bool",
+              "can_call": "bool",
+              "can_write_private_message": "int",
+              "can_send_friend_request": "int",
+              "track_code": "str",
+              "is_nft": "bool",
+              "is_esia_verified": "bool",
+              "is_tinkoff_verified": "bool",
+              "is_sber_verified": "bool",
+              "social_button_type": "str",
+              "screen_name": "str",
+              "photo_base": "str",
+              "online_info": "dict",
+              "online": "int",
+              "verified": "int",
+              "friend_status": "int",
+              "mutual": "dict",
+              "first_name": "str",
+              "last_name": "str"
+            }
+          }
+        }
+      },
+      "response_type": "object",
+      "has_count_items": true
+    }
+  ],
+  "page": {
+    "host": "m.vk.ru",
+    "path": "/friends",
+    "query_keys": [
+      "id"
+    ],
+    "friend_source_links": 22,
+    "friends_counter_labels": [
+      "Друзья\n104"
+    ]
+  },
+  "friends_request_found": true
+}

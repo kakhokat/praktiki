@@ -1,0 +1,16 @@
+{
+  "friends_source": "web_api",
+  "members_resolved": 17,
+  "members_unresolved": 0,
+  "first_hop_profiles": 1956,
+  "vertices": 481350,
+  "edges": 593844,
+  "components": 1,
+  "friends_lists_ok": 1460,
+  "friends_lists_partial": 0,
+  "friends_lists_unavailable": 513,
+  "betweenness": "sampled",
+  "betweenness_sample_size": 512,
+  "eigenvector": "L2-normalized within each connected component; blank for isolates",
+  "closeness": "NetworkX Wasserman\u2013Faust correction for disconnected graphs"
+}
